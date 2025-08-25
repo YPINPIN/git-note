@@ -12,6 +12,10 @@
 
   https://github.com/YPINPIN/web-layout-training-git-test-preview
 
+補充教學：
+
+[Git commit 忘記切分支補救方式](https://medium.com/prochini/%E6%80%A5-git-commit-%E5%BF%98%E8%A8%98%E5%88%87%E5%88%86%E6%94%AF-727aba80ba85)
+
 ## 1. 專案複製到本地
 
 ```bash
