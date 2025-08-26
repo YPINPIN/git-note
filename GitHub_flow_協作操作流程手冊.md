@@ -16,6 +16,19 @@
 
 [Git commit 忘記切分支補救方式](https://medium.com/prochini/%E6%80%A5-git-commit-%E5%BF%98%E8%A8%98%E5%88%87%E5%88%86%E6%94%AF-727aba80ba85)
 
+目錄：
+
+- [1. 專案複製到本地](#1-專案複製到本地)
+- [2. 從最新 develop 切出功能分支 (開發由此開始)](#2-從最新-develop-切出功能分支-開發由此開始)
+- [3. 本地開發與提交](#3-本地開發與提交)
+- [4. 發 PR 前同步功能分支至最新 develop（必做）](#4-發-pr-前同步功能分支至最新-develop必做)
+- [5. 建立 Pull Request（PR）](#5-建立-pull-requestpr)
+- [6. PR 審查與合併](#6-pr-審查與合併)
+- [7. 合併完成後刪除分支 (建議執行，由 PR 發起人操作)](#7-合併完成後刪除分支-建議執行由-pr-發起人操作)
+- [8. 新功能開發循環](#8-新功能開發循環)
+- [9. 合併 develop 版本到 main（由一人執行，使用 Pull Request](#9-合併-develop-版本到-main由一人執行使用-pull-request)
+- [10. 在 PR 合併到 develop 和 main 之後會自動觸發 Github Action 來 Deploy Github Pages](#10-在-pr-合併到-develop-和-main-之後會自動觸發-github-action-來-deploy-github-pages)
+
 ## 1. 專案複製到本地
 
 ```bash
@@ -251,13 +264,13 @@ git push origin --delete feature/<功能名稱>
 
 ![git-flow-29](./image/git_flow/git-flow-29.png)
 
-## 🔄 8. 新功能開發循環
+## 8. 新功能開發循環
 
 > 新功能都應從最新的 `develop` 切分支 → 回到 [第 2 步](#2-從最新-develop-切出功能分支-開發由此開始) 開始操作。
 
 ---
 
-## 🚀 9. 合併 develop 版本到 main（由一人執行，使用 Pull Request）
+## 9. 合併 develop 版本到 main（由一人執行，使用 Pull Request）
 
 當 `develop` 分支 Deploy 到預覽版 GitHub Pages ( 方式請看 [第 10 步](#10-在-pr-合併到-develop-和-main-之後會自動觸發-github-action-來-deploy-github-pages) ) 上測試確認功能無誤後可以合併版本到 `main` 分支。
 
